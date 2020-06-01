@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zidian.myactivitystackmanager">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- App A -->
+        <activity
+            android:name=".appA.A1Activity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_nameA"
+            android:launchMode="singleTop"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:taskAffinity="com.zidian.myactivitystackmanager.a">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".appA.A2Activity"
+            android:launchMode="singleTop" />
+        <activity android:name=".appA.A3Activity"
+            android:launchMode="singleTop" />
+
+
+        <!-- App B -->
+        <activity
+            android:name=".appB.B1Activity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_nameB"
+            android:launchMode="singleTop"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:taskAffinity="com.zidian.myactivitystackmanager.b">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".appB.B2Activity"
+            android:launchMode="singleTop" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

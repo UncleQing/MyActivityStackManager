@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyActivityStackManager</string>
+    <string name="app_nameA">APP_A</string>
+    <string name="app_nameB">APP_B</string>
+</resources>
